@@ -16,12 +16,10 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
   var weight = obj.weight;
   var height = obj.height;
   if (weight > 0 && height > 0) {
-    finalBMI = //(weight * 703) / (height * height);
+    finalBMI = (weight * 703) / (height * height);
     obj.bmiValue = parseFloat(finalBmi.toFixed(2));
     setBMIMessage(obj);
   }
-  // obj.bmiValue = 26.01
-  // obj.bmiMessage = 'Overweight'
 };
 
  function setBMIMessage (obj){
