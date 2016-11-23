@@ -39,11 +39,11 @@ describe("Person", function() {
     it('should have height of 73', function() {
       expect(person.height).toEqual(73);
     });
-  //
-  //   it('should calculate BMI value', function() {
-  //     person.calculate_bmi();
-  //     expect(person.bmiValue).toEqual(26.01)
-  //   });
+
+    it('should calculate BMI value', function() {
+      person.calculate_bmi_imperial();
+      expect(person.bmiValue).toEqual(26.01)
+    });
   // // //
   // // // it('should have BMI Message', function() {
   // // //   person.calculate_bmi();
