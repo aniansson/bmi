@@ -42,7 +42,7 @@ describe("Person", function() {
 
     it('should calculate BMI value', function() {
       person.calculate_bmi_imperial();
-      expect(person.bmiValue).toEqual(26.01)
+      expect(person.bmiValue).toEqual(26.12)
     });
 
     it('should have BMI Message', function() {

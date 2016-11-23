@@ -31,8 +31,12 @@
       var w = parseFloat($('#weight').val());
       var h = parseFloat($('#height').val());
       var o = $('select').val();
-      var person = new Person({weight: w, height: h, option: o});
-      person.calculate_bmi();
+      var person = new Person({weight: w, height: h});
+      if(o == 'Metric') {
+      person.calculate_bmi_metric();
+    } else {
+      person.calculate_bmi_imperial();
+    }
       $('#display_value').html('Your BMI is ' + person.bmiValue);
       $('#display_message').html('and you are ' + person.bmiMessage);
     });
