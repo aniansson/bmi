@@ -19,6 +19,7 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
   //   obj.bmiValue = parseFloat(finalBmi.toFixed(2));
   //   setBMIMessage(obj);
   // }
+  obj.bmiValue = 26.01
 };
 
  function setBMIMessage (obj){

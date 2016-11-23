@@ -19,8 +19,10 @@ describe("BMICalculator", function() {
     });
   });
 
-  // describe('imperial unit calculator', function() {
-  //   beforeEach(function() {
+  describe('imperial unit calculator', function() {
+    beforeEach(function() {
+      person = new Person({weight: 198, height: 73});
+      calculator = new BMICalculator();
   //   it('calculates BMI for a person using the imperial method', function() {
   //     calculator.imperial_bmi(person);
   //     expect(person.bmiValue).toEqual(26.01);
@@ -30,6 +32,6 @@ describe("BMICalculator", function() {
   // // //   calculator.imperial_bmi(person);
   // // //   expect(person.bmiValue).toEqual('Overweight');
   // // // });
-  //   });
-  // });
+    });
+  });
 });
