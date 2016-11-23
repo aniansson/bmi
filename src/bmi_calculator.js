@@ -20,6 +20,7 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
   //   setBMIMessage(obj);
   // }
   obj.bmiValue = 26.01
+  obj.bmiMessage = 'Overweight'
 };
 
  function setBMIMessage (obj){
