@@ -23,16 +23,16 @@ describe("BMICalculator", function() {
     beforeEach(function() {
       person = new Person({weight: 198, height: 73});
       calculator = new BMICalculator();
+    });
 
-      it('calculates BMI for a person using the imperial method', function() {
-        calculator.imperial_bmi(person);
-        expect(person.bmiValue).toEqual(26.01);
-      });
+    it('calculates BMI for a person using the imperial method', function() {
+      calculator.imperial_bmi(person);
+      expect(person.bmiValue).toEqual(26.01);
+    });
 
-      it('should give BMI message', function() {
-        calculator.imperial_bmi(person);
-        expect(person.bmiValue).toEqual('Overweight');
-      });
+    it('should give BMI message', function() {
+      calculator.imperial_bmi(person);
+      expect(person.bmiValue).toEqual('Overweight');
     });
   });
 });
