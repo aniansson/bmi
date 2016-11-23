@@ -32,7 +32,7 @@ describe("BMICalculator", function() {
 
     it('should give BMI message', function() {
       calculator.imperial_bmi(person);
-      expect(person.bmiValue).toEqual('Overweight');
+      expect(person.bmiMessage).toEqual('Overweight');
     });
   });
 });
