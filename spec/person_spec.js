@@ -27,20 +27,18 @@ describe("Person", function() {
 
 
 
-  // describe('imperial units', function() {
-  //   var person;
-  //
-  // beforeEach(function() {
-  //   person = new Person({weight: 198, height: 73});
-  // });
-  //
-  // // it('should have weight of 198', function() {
-  // //   expect(person.weight).toEqual(198);
-  // // });
-  // //
-  // // it('should have height of 73', function() {
-  // //   expect(person.height).toEqual(73);
-  // // });
+  describe('imperial units', function() {
+    beforeEach(function() {
+      person = new Person({weight: 198, height: 73});
+    });
+
+    it('should have weight of 198', function() {
+      expect(person.weight).toEqual(198);
+    });
+    
+    it('should have height of 73', function() {
+      expect(person.height).toEqual(73);
+    });
   // //
   // // it('should calculate BMI value', function() {
   // //   person.calculate_bmi();
@@ -51,5 +49,5 @@ describe("Person", function() {
   // //   person.calculate_bmi();
   // //   expect(person.bmiMessage).toEqual('Overweight')
   // // });
-  // });
+  });
 });
