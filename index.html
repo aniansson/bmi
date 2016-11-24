@@ -5,17 +5,22 @@
     <title></title>
     <script src='src/person.js'></script>
     <script src='src/bmi_calculator.js'></script>
+    <link rel='stylesheet' type='text/css' href='src/css/foundation.css'>
+    <link rel='stylesheet' type='text/css' href="src/css/app.css">
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
   </head>
   <body>
     <form>
+      <header class='header'>
+        <h3>Calculate your BMI</h3>
+      <header>
       <select>
         <option>Metric</option>
         <option>Imperial</option>
       </select>
       <input type='text' id='weight' placeholder="Weight">
       <input type='text' id='height' placeholder="Height">
-      <input type='button' id='calculate' value='Calculate'>
+      <input class='button secondary' type='button' id='calculate' value='Calculate'>
     </form>
     <div>
       <span id='display_value'></span>
